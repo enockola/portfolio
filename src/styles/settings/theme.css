@@ -1,0 +1,20 @@
+@property --glow-angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 90deg;
+}
+
+html {
+  accent-color: var(--color-brand);
+}
+
+::selection {
+  background: hsl(168 84% 55% / 0.25);
+  color: var(--color-text);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}

@@ -1,202 +1,334 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Enoch Olayemi | Full-Stack Developer & Web Designer</title>
+    <meta
+      name="description"
+      content="Portfolio website for Enoch Olayemi, a full-stack developer and web designer building clean, responsive, user-focused web applications."
+    />
+    <link rel="stylesheet" href="dist/styles.min.css" />
+    <script src="scripts/main.js" defer></script>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/acd4da4d53.js" crossorigin="anonymous"></script>
-    <title>Personal Portfolio Website</title>
-</head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-<body>
-    <!-- Home section -->
-    <section id="header">
-        <div class="container">
-            <nav>
-                <h1 class="logo">AR<span class="folio">Tech</span> </h1>
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i id="nav-togglers" class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                <img id="nav-togglers" onclick="openmenu()" src="./Images/icon-hamburger.svg" alt="">
-            </nav>
+    <header class="site-header" data-header>
+      <div class="wrapper site-header__inner">
+        <a class="brand" href="#top" aria-label="Enoch Olayemi home">
+          <span class="brand__mark">EO</span>
+          <span class="brand__text">Enoch Olayemi</span>
+        </a>
 
-            <div class="heading">
-                <p>Web <span>Designer</span>/Artist</p>
-                <h1>Hi, I'm <span class="myname">Enoch</span> Olayemi <br> from <span class="nigeria"> Nig</span>er<span
-                        class="nigeria">ia</span></h1>
+        <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" data-nav-toggle>
+          <span class="sr-only">Toggle navigation</span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation" data-nav>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#case-study">Case Study</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero section" id="top" aria-labelledby="hero-title">
+        <div class="wrapper hero__grid">
+          <div class="hero__content flow">
+            <p class="eyebrow">Full-stack developer · Web designer · CS student</p>
+            <h1 id="hero-title">I build clean, responsive web experiences with thoughtful backend structure.</h1>
+            <p class="hero__lead">
+              I’m Enoch Olayemi, a full-stack developer and web designer focused on creating practical, professional,
+              and user-friendly web applications. I enjoy combining backend systems, databases, and polished interface
+              design to turn ideas into usable products.
+            </p>
+
+            <div class="cluster">
+              <a class="button button--primary" href="assets/resume/Enoch-Olayemi-Resume.pdf" download>
+                Download Resume
+              </a>
+              <a class="button button--ghost" href="#projects">View Projects</a>
             </div>
+
+            <ul class="hero__stats" aria-label="Portfolio highlights">
+              <li>
+                <strong>Full-stack</strong>
+                <span>Node, Express, MongoDB, APIs</span>
+              </li>
+              <li>
+                <strong>Design</strong>
+                <span>Responsive UI, CSS systems, accessibility</span>
+              </li>
+              <li>
+                <strong>Focus</strong>
+                <span>Creator dashboards and practical web tools</span>
+              </li>
+            </ul>
+          </div>
+
+          <aside class="profile-card" aria-label="Profile summary">
+            <div class="profile-card__orb" aria-hidden="true"></div>
+            <p class="profile-card__label">Currently building</p>
+            <h2>Creator-focused dashboards</h2>
+            <p>
+              My strongest work right now centers on Tapitude Creator Hub, a platform concept where creators manage
+              content that visitors can access through NFC-powered public pages.
+            </p>
+            <a href="#case-study">Read the case study</a>
+          </aside>
         </div>
-    </section>
+      </section>
 
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img class="enoch" src="./Images/Me Black&White.jpg" alt="">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore consequuntur odit repellendus
-                        odio minus exercitationem quasi amet reprehenderit consequatur ut ipsum asperiores illo, cumque
-                        earum laborum magnam animi ab qui!</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem nihil suscipit cum nesciunt iure
-                        exercitationem animi reprehenderit necessitatibus ratione, minima vitae repellendus, quod
-                        inventore saepe doloribus dolore maxime! Laboriosam, soluta.</p>
+      <section class="section about" id="about" aria-labelledby="about-title">
+        <div class="wrapper split">
+          <div class="section-heading flow">
+            <p class="eyebrow">About</p>
+            <h2 id="about-title">A developer who cares about both structure and presentation.</h2>
+          </div>
 
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" id="skl" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" id="exp" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" id="edu" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>UI/UX</span><br>Designing Web/App interface</li>
-                            <li><span>Web Design</span><br>Web App Development</li>
-                            <li><span>Art</span><br>See my Artworks</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>2021 - Current</span><br>Web Design training at 720Degree Hub</li>
-                            <li><span>2019 - 2021</span><br>Internship at StarCode LLC</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2019</span><br>Web Design training at 720Degree Hub</li>
-                        </ul>
-                    </div>
-                </div>
+          <div class="flow">
+            <p>
+              I am a Computer Science student at BYU-Idaho with a growing focus on full-stack development and web
+              design. I like projects where the user interface is simple, the backend has a clear purpose, and the
+              overall product feels organized and easy to use.
+            </p>
+            <p>
+              My portfolio highlights backend thinking, database design, responsive layouts, and modern CSS workflows.
+              I am especially interested in building dashboards, content tools, and web applications that solve real
+              problems.
+            </p>
+
+            <div class="skills-list" aria-label="Skills">
+              <span>HTML</span>
+              <span>CSS Architecture</span>
+              <span>JavaScript</span>
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>MongoDB</span>
+              <span>REST APIs</span>
+              <span>Responsive Design</span>
+              <span>GitHub</span>
+              <span>Accessibility</span>
             </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <!-- projects  -->
-            <div class="work-project-list">
-                <div class="work">
-                    <img src="./Images/desktop-design 1.jpg" alt="">
-                    <div class="layer">
-                        <h3>Easybank Project</h3>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="./Images/desktop-design 2.jpg" alt="">
-                    <div class="layer">
-                        <h3>Manage Project</h3>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="./Images/desktop-design 3.jpg" alt="">
-                    <div class="layer">
-                        <h3>Monograph Project</h3>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-            </div>
-            <a class="btn" href="#">See more</a>
-            <!-- artworks -->
-            <div class="work-art-list">
-                <div class="work">
-                    <!-- <img src="./Images/art-design 1.jpg" alt=""> -->
-                    <div class="layer">
-                        <h3>Monograph Project</h3>
-                        <a href="#">View</a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="./Images/art-design 2.jpg" alt="">
-                    <div class="layer">
-                        <h3>Monograph Project</h3>
-                        <a href="#">View</a>
-                    </div>
-                </div>
-                <div class="work">
-                    <!-- <img src="./Images/art-design 3.jpg" alt=""> -->
-                    <div class="layer">
-                        <h3>Monograph Project</h3>
-                        <a href="#">View</a>
-                    </div>
-                </div>
-            </div>
-            <a class="btn" href="#">See more</a>
+      <section class="section projects" id="projects" aria-labelledby="projects-title">
+        <div class="wrapper flow">
+          <div class="section-heading section-heading--center flow">
+            <p class="eyebrow">Selected Work</p>
+            <h2 id="projects-title">Projects that show full-stack and design range.</h2>
+            <p>
+              These projects are written to show the kind of work your portfolio should communicate: problem, role,
+              tools, and impact.
+            </p>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card project-card--featured">
+              <div class="project-card__meta">
+                <span>Featured</span>
+                <span>Full-stack dashboard</span>
+              </div>
+              <h3>Tapitude Creator Hub</h3>
+              <p>
+                Creator dashboard for uploading, managing, and personalizing content that appears on public pages when
+                visitors scan an NFC chip.
+              </p>
+              <ul>
+                <li>Planned content upload and last-10-post display flow</li>
+                <li>Designed scalable backend and database structure</li>
+                <li>Created dashboard-focused documentation and architecture planning</li>
+              </ul>
+              <div class="project-card__links">
+                <a href="https://github.com/enockola/tapitude" target="_blank" rel="noreferrer">GitHub</a>
+                <a href="#case-study">Case Study</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__meta">
+                <span>Backend</span>
+                <span>Express</span>
+              </div>
+              <h3>ReplyBot Web App</h3>
+              <p>
+                A web application/backend project focused on routing, server-side views, form handling, and practical
+                application structure.
+              </p>
+              <ul>
+                <li>Used Express routes and organized view templates</li>
+                <li>Handled contact and authentication-style workflows</li>
+                <li>Practiced backend debugging and project structure</li>
+              </ul>
+              <div class="project-card__links">
+                <a href="https://github.com/enockola" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__meta">
+                <span>Frontend</span>
+                <span>Advanced CSS</span>
+              </div>
+              <h3>Advanced CSS Learning Demos</h3>
+              <p>
+                A collection of demos exploring design tokens, cascade layers, component organization, responsive
+                layouts, and modern CSS features.
+              </p>
+              <ul>
+                <li>Organized CSS into layers, tokens, components, and utilities</li>
+                <li>Explored PostCSS-style workflows and production CSS output</li>
+                <li>Focused on clean explanations and reusable structure</li>
+              </ul>
+              <div class="project-card__links">
+                <a href="https://github.com/enockola" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__meta">
+                <span>Database</span>
+                <span>SQL</span>
+              </div>
+              <h3>Skating Learning Database</h3>
+              <p>
+                A beginner-friendly database project that models skaters, tricks, progress, and practice scenarios using
+                realistic SQL queries.
+              </p>
+              <ul>
+                <li>Designed practical query scenarios for filtering and sorting</li>
+                <li>Used WHERE, DISTINCT, IN, BETWEEN, AND/OR, and ORDER BY</li>
+                <li>Connected database concepts to a real hobby-based domain</li>
+              </ul>
+              <div class="project-card__links">
+                <a href="https://github.com/enockola" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__meta">
+                <span>Networking</span>
+                <span>Cisco</span>
+              </div>
+              <h3>Network Configuration Labs</h3>
+              <p>
+                Cisco Packet Tracer labs covering VLANs, trunking, DHCP, routing, switching security, wireless, and
+                network troubleshooting.
+              </p>
+              <ul>
+                <li>Configured VLANs, trunks, inter-VLAN routing, and DHCP</li>
+                <li>Practiced switch security, PortFast, BPDU Guard, and EtherChannel</li>
+                <li>Built documentation habits through step-by-step labs</li>
+              </ul>
+              <div class="project-card__links">
+                <a href="#contact">Ask about this work</a>
+              </div>
+            </article>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Services Section -->
-    <section id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Design Landing Webpages</h2>
-                    <p>Lorem ipsum dolor sit amet, Sapiente esse aliquid impedit vel?
-                    </p>
-                    <a href="#">Learn More <i class="fa-solid fa-circle-info"></i></a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-briefcase"></i>
-                    <h2>Design Portfolio Websites</h2>
-                    <p>Lorem ipsum adipisicing elits. Soluta voluptas consequuntur!</p>
-                    <a href="#">Learn More <i class="fa-solid fa-circle-info"></i></a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-palette"></i>
-                    <h2>Design Your Artworks</h2>
-                    <p>Lorem, ipsum dolor sit amet uae cumque aspernatur? Soluta consequuntur!</p>
-                    <a href="#">Learn More <i class="fa-solid fa-circle-info"></i></a>
-                </div>
-            </div>
+      <section class="section case-study" id="case-study" aria-labelledby="case-study-title">
+        <div class="wrapper case-study__grid">
+          <div class="section-heading flow">
+            <p class="eyebrow">Short Case Study</p>
+            <h2 id="case-study-title">Tapitude Creator Hub</h2>
+            <p>
+              A focused case study showing how I think through product requirements, architecture, user flows, and
+              implementation priorities.
+            </p>
+          </div>
+
+          <div class="case-study__content flow">
+            <article class="case-step">
+              <span>01</span>
+              <div>
+                <h3>Problem</h3>
+                <p>
+                  Content creators need a simple way to upload and manage content that visitors can access from a
+                  public page. The system also needs to support personalization, fast access, and future scalability.
+                </p>
+              </div>
+            </article>
+
+            <article class="case-step">
+              <span>02</span>
+              <div>
+                <h3>My Role</h3>
+                <p>
+                  I helped define the Creator Hub direction, clarify sponsor questions, document system requirements,
+                  and focus the project around the dashboard/backend before spending too much time on visual polish.
+                </p>
+              </div>
+            </article>
+
+            <article class="case-step">
+              <span>03</span>
+              <div>
+                <h3>Approach</h3>
+                <p>
+                  The project is structured around creator accounts, content posts, media uploads, public content
+                  history, dashboard tools, and clear documentation for future developers.
+                </p>
+              </div>
+            </article>
+
+            <article class="case-step">
+              <span>04</span>
+              <div>
+                <h3>What I Learned</h3>
+                <p>
+                  Strong web projects need more than screens. They need clear data models, thoughtful user flows,
+                  practical APIs, and documentation that helps future developers understand the system.
+                </p>
+              </div>
+            </article>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-envelope"></i> enocholayemi928@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i> 08089138654</p>
-                    <div class="social-icons">
-                        <a href=""><i class="fa-brands fa-square-facebook"></i></a>
-                        <a href=""><i class="fa-brands fa-square-instagram"></i></i></a>
-                        <a href=""><i class="fa-brands fa-square-twitter"></i></i></a>
-                    </div>
-                    <a class="btn btn2" href="">Download CV</a>
-                </div>
-                <div class="contact-right">
-                    <form action="">
-                        <input type="text" placeholder="Your Name" required>
-                        <input type="email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="10" placeholder="Your Message"></textarea>
-                        <button class="btn btn2" type="submit">Submit</button>
-                    </form>
-                </div>
-            </div>
+      <section class="section contact" id="contact" aria-labelledby="contact-title">
+        <div class="wrapper contact-card">
+          <div class="flow">
+            <p class="eyebrow">Contact</p>
+            <h2 id="contact-title">Let’s build something practical and polished.</h2>
+            <p>
+              I’m open to full-stack development, web design, internship, and project opportunities.
+            </p>
+          </div>
+
+          <div class="contact-card__actions">
+            <a class="button button--primary" href="mailto:enocholayemi928@gmail.com">Email Me</a>
+            <button class="button button--ghost" type="button" data-copy-email>Copy Email</button>
+          </div>
+
+          <ul class="contact-links" aria-label="Social links">
+            <li><a href="mailto:enocholayemi928@gmail.com">enocholayemi928@gmail.com</a></li>
+            <li><a href="https://github.com/enockola" target="_blank" rel="noreferrer">GitHub</a></li>
+            <li>
+              <a href="https://www.linkedin.com/in/your-linkedin-here" target="_blank" rel="noreferrer">
+                LinkedIn
+              </a>
+            </li>
+          </ul>
         </div>
-    </section>
+      </section>
+    </main>
 
-    <!-- Copyright Section -->
-    <section class="copyright">
-        <p>Copyright @ Enoch. Made with by Artech Inc.</p>
-    </section>
-</body>
-
-<script src="app.js"></script>
-
+    <footer class="site-footer">
+      <div class="wrapper site-footer__inner">
+        <p>© <span data-year></span> Enoch Olayemi. Built with layered CSS and responsive design.</p>
+        <a href="#top">Back to top</a>
+      </div>
+    </footer>
+  </body>
 </html>

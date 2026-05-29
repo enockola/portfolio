@@ -1,0 +1,14 @@
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--size-2);
+}
+
+.skills-list span {
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-pill);
+  padding: 0.45rem 0.7rem;
+  background: hsl(0 0% 100% / 0.05);
+  color: var(--color-muted);
+  font-size: 0.92rem;
+}

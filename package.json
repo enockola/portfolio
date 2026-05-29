@@ -1,0 +1,21 @@
+{
+  "name": "enoch-portfolio-static",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static portfolio website for Enoch Olayemi, full-stack developer and web designer.",
+  "scripts": {
+    "dev": "npx serve .",
+    "build:css": "postcss src/styles/main.css -o dist/styles.css",
+    "build:css:min": "NODE_ENV=production postcss src/styles/main.css -o dist/styles.min.css",
+    "build:css:lightning": "lightningcss --bundle src/styles/main.css --minify --targets '>= 0.25%' -o dist/styles.min.css"
+  },
+  "devDependencies": {
+    "lightningcss-cli": "^1.30.1",
+    "cssnano": "^7.0.6",
+    "postcss": "^8.4.49",
+    "postcss-cli": "^11.0.0",
+    "postcss-import": "^16.1.0",
+    "postcss-preset-env": "^10.1.3",
+    "serve": "^14.2.4"
+  }
+}

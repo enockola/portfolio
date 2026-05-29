@@ -1,0 +1,63 @@
+body {
+  font-family: var(--font-sans);
+  font-size: clamp(1rem, 0.96rem + 0.18vw, 1.1rem);
+  line-height: 1.6;
+  background: var(--gradient-hero);
+  color: var(--color-text);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background-image:
+    linear-gradient(hsl(0 0% 100% / 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, hsl(0 0% 100% / 0.035) 1px, transparent 1px);
+  background-size: 4rem 4rem;
+  mask-image: linear-gradient(to bottom, black, transparent 80%);
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: clamp(2.7rem, 7vw, 5.8rem);
+  max-inline-size: 11ch;
+}
+
+h2 {
+  font-size: clamp(2rem, 4.2vw, 3.65rem);
+}
+
+h3 {
+  font-size: clamp(1.25rem, 2vw, 1.55rem);
+}
+
+p {
+  max-inline-size: 68ch;
+  color: var(--color-muted);
+}
+
+a {
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.18em;
+}
+
+a:hover {
+  color: var(--color-brand);
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-brand);
+  outline-offset: 4px;
+}
+
+main {
+  overflow: clip;
+}
