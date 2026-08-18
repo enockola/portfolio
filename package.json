@@ -1,21 +1,25 @@
 {
-  "name": "enoch-portfolio-static",
+  "name": "enoch-olayemi-portfolio",
   "version": "1.0.0",
-  "private": true,
-  "description": "Static portfolio website for Enoch Olayemi, full-stack developer and web designer.",
+  "description": "The personal developer portfolio of Enoch Olayemi.",
   "scripts": {
-    "dev": "npx serve .",
-    "build:css": "postcss src/styles/main.css -o dist/styles.css",
-    "build:css:min": "NODE_ENV=production postcss src/styles/main.css -o dist/styles.min.css",
-    "build:css:lightning": "lightningcss --bundle src/styles/main.css --minify --targets '>= 0.25%' -o dist/styles.min.css"
+    "build": "lightningcss --bundle --minify --targets \">= 0.25%\" css/main.css -o dist/styles.css",
+    "watch": "chokidar \"css/**/*.css\" -c \"npm run build\" --debounce 600"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enockola/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/enockola/portfolio/issues"
+  },
+  "homepage": "https://enockola.github.io/portfolio/",
   "devDependencies": {
-    "lightningcss-cli": "^1.30.1",
-    "cssnano": "^7.0.6",
-    "postcss": "^8.4.49",
-    "postcss-cli": "^11.0.0",
-    "postcss-import": "^16.1.0",
-    "postcss-preset-env": "^10.1.3",
-    "serve": "^14.2.4"
+    "chokidar-cli": "^3.0.0",
+    "lightningcss-cli": "^1.32.0"
   }
 }

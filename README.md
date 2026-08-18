@@ -1,100 +1,37 @@
-# Enoch Olayemi Portfolio Website
+# Enoch Olayemi — Developer Portfolio
 
-A clean, responsive static portfolio for a full-stack developer and web designer.
+My personal portfolio highlighting full-stack development, software projects,
+professional experience, and technical skills.
 
-## What it includes
+## Pages
 
-- Home/about section
-- Resume download button
-- 5 project cards
-- Featured case study for Tapitude Creator Hub
-- GitHub, LinkedIn, and email contact links
-- Responsive design for mobile, tablet, and desktop
-- Advanced CSS structure using cascade layers
-- Design tokens for color, spacing, typography, radius, and shadows
-- Container queries, `clamp()`, modern selectors, and accessibility-focused states
-- PostCSS and Lightning CSS CLI build scripts for bundled/minified CSS
+- `index.html` — introduction, selected projects, and professional focus
+- `resume.html` — responsive and print-friendly résumé
+- `contact.html` — contact information and email form
 
-## Quick start
+## Development
 
-Open `index.html` directly in your browser.
+Install the development dependencies:
 
-The page already links to `dist/styles.min.css`, so it works without installing anything.
-
-## Replace these before submitting
-
-1. Add your real resume PDF here:
-
-```txt
-assets/resume/Enoch-Olayemi-Resume.pdf
-```
-
-2. Update the LinkedIn link in `index.html`:
-
-```html
-https://www.linkedin.com/in/your-linkedin-here
-```
-
-3. Update project links once your GitHub repositories or live demos are ready.
-
-## CSS build workflow
-
-Install dependencies:
-
-```bash
+```sh
 npm install
 ```
 
-Build readable bundled CSS:
+Build the bundled and minified stylesheet:
 
-```bash
-npm run build:css
+```sh
+npm run build
 ```
 
-Build minified CSS with PostCSS/cssnano:
+Watch the CSS source during development:
 
-```bash
-npm run build:css:min
+```sh
+npm run watch
 ```
 
-Build minified CSS with Lightning CSS:
+The source entry point is `css/main.css`; the generated production file is
+`dist/styles.css`.
 
-```bash
-npm run build:css:lightning
-```
+## Live Site
 
-Run the local dev server:
-
-```bash
-npm run dev
-```
-
-## Folder structure
-
-```txt
-.
-├── index.html
-├── package.json
-├── postcss.config.cjs
-├── dist/
-│   ├── styles.css
-│   └── styles.min.css
-├── src/
-│   └── styles/
-│       ├── main.css
-│       ├── settings/
-│       ├── generic/
-│       ├── elements/
-│       ├── layouts/
-│       ├── components/
-│       └── utilities/
-├── scripts/
-│   └── main.js
-└── assets/
-    ├── images/
-    └── resume/
-```
-
-## Notes
-
-This version uses your current positioning as a full-stack developer and web designer. It also highlights the Tapitude Creator Hub as the strongest case study because it shows backend, dashboard, content management, and user-facing web design.
+[enockola.github.io/portfolio](https://enockola.github.io/portfolio/)
