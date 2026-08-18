@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Resume of Enoch Olayemi, a Computer Science student focused on AI engineering and full-stack web development."
+    />
+    <title>Enoch Olayemi | Resume</title>
+    <script src="js/theme-preference.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="dist/styles.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Main navigation">
+        <a class="site-logo" href="index.html">EO<span>.</span></a>
+
+        <ul class="site-nav__list">
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="resume.html" aria-current="page">Résumé</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <details class="theme-menu">
+          <summary class="theme-control">
+            <span class="visually-hidden">Color scheme</span>
+          </summary>
+          <div
+            class="theme-extra"
+            role="group"
+            aria-label="Choose color scheme"
+          >
+            <label class="theme-control theme-pick" data-theme-pick="light">
+              <input name="theme-preference" type="radio" value="light" />
+              <span aria-hidden="true">&#9788;&#65039;</span>
+              <span class="visually-hidden">Light</span>
+            </label>
+            <label class="theme-control theme-pick" data-theme-pick="system">
+              <input
+                name="theme-preference"
+                type="radio"
+                value="system"
+                checked
+              />
+              <span aria-hidden="true">&#9881;&#65039;</span>
+              <span class="visually-hidden">System default</span>
+            </label>
+            <label class="theme-control theme-pick" data-theme-pick="dark">
+              <input name="theme-preference" type="radio" value="dark" />
+              <span aria-hidden="true">&#127766;</span>
+              <span class="visually-hidden">Dark</span>
+            </label>
+          </div>
+        </details>
+      </nav>
+    </header>
+
+    <a class="skip-link" href="#resume">Skip to resume</a>
+
+    <main id="resume" class="page resume-shell" aria-labelledby="resume-name">
+      <div class="resume-actions">
+        <a class="btn btn--secondary" href="contact.html">Contact me</a>
+        <button type="button" onclick="window.print()">Print résumé</button>
+      </div>
+      <article class="resume-sheet">
+      <header class="resume-header">
+        <h1 id="resume-name">Enoch Olayemi</h1>
+
+        <address class="resume-contact" aria-label="Contact information">
+          <a href="mailto:ola23018@byui.edu">ola23018@byui.edu</a>
+          <span aria-hidden="true">•</span>
+          <a href="tel:+13854577548">(385) 457-7548</a>
+          <span aria-hidden="true">•</span>
+          <a href="https://github.com/enockola">GitHub</a>
+          <span aria-hidden="true">•</span>
+          <a href="https://www.linkedin.com/in/enoch-olayemi/">LinkedIn</a>
+        </address>
+      </header>
+
+      <section class="resume-section" aria-labelledby="education-heading">
+        <h2 id="education-heading">Education</h2>
+
+        <article class="resume-entry">
+          <div class="resume-entry__row">
+            <h3>Bachelor of Science in Computer Science; Minor: AI Engineering</h3>
+
+            <p class="resume-entry__date">
+              <time datetime="2024-01">January 2024</time> -
+              <time datetime="2028-04">April 2028</time>
+            </p>
+          </div>
+
+          <div class="resume-entry__row">
+            <p>Brigham Young University - Idaho</p>
+            <p>GPA: 3.989/4.0</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="resume-section" aria-labelledby="skills-heading">
+        <h2 id="skills-heading">Technical Skills</h2>
+        <dl class="resume-skills">
+          <div><dt>Languages</dt><dd>Python, JavaScript, SQL, C#</dd></div>
+          <div><dt>Backend/Web</dt><dd>Node.js, Express, EJS, ASP.NET, WordPress</dd></div>
+          <div><dt>Databases/Tools</dt><dd>PostgreSQL, MongoDB, Git, GitHub</dd></div>
+        </dl>
+      </section>
+
+      <section class="resume-section" aria-labelledby="experience-heading">
+        <h2 id="experience-heading">Experience</h2>
+
+        <article class="resume-entry">
+          <div class="resume-entry__row">
+            <p>
+              <strong>Full-Stack Developer Intern</strong>
+              <span>at Tapitude; Remote</span>
+            </p>
+
+            <p class="resume-entry__date">
+              <time datetime="2026-04">April 2026</time> -
+              <time datetime="2026-07">July 2026</time>
+            </p>
+          </div>
+
+          <ul class="resume-list">
+            <li>
+              Developed a full-stack creator content platform for admins and
+              creators, supporting two role-based user flows, by developing
+              Express/EJS routes, MongoDB models, and session-based authentication.
+            </li>
+
+            <li>
+              Revamped post lifecycle reliability, enforcing a 25-post creator
+              limit, by adding automatic oldest-post deletion logic and removing
+              associated media files during post cleanup.
+            </li>
+
+            <li>
+              Improved sponsor handoff and developer onboarding with 15 structured
+              Markdown documents covering 24 routes and six models by documenting
+              Tapitude’s architecture, authentication, media storage, deployment
+              flow, and testing gaps.
+            </li>
+          </ul>
+        </article>
+
+        <article class="resume-entry">
+          <div class="resume-entry__row">
+            <p>
+              <strong>Freelance WordPress Developer</strong>
+              <span>at Peculiar Consulting Services; Lagos, Nigeria</span>
+            </p>
+
+            <p class="resume-entry__date">
+              <time datetime="2022-08">August 2022</time> - Present
+            </p>
+          </div>
+
+          <ul class="resume-list">
+            <li>
+              Established the online presence of a Nigerian financial consulting
+              startup by designing and launching its first responsive WordPress
+              website.
+            </li>
+
+            <li>
+              Maintained the company’s website since 2022 by updating content,
+              managing WordPress features, resolving technical issues, and keeping
+              the site functional across devices.
+            </li>
+          </ul>
+        </article>
+
+        <article class="resume-entry">
+          <div class="resume-entry__row">
+            <p>
+              <strong>Support Specialist</strong>
+              <span>at the BYU-I Support Center; Rexburg, Idaho</span>
+            </p>
+
+            <p class="resume-entry__date">
+              <time datetime="2024-04">April 2024</time> - Present
+            </p>
+          </div>
+
+          <ul class="resume-list">
+            <li>
+              Serviced 100+ students, employees, and visitors weekly across phone,
+              chat, and walk-up interactions, maintaining a 99.7% first-contact
+              resolution rate while troubleshooting account access and
+              campus-service issues.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="resume-section" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Programming Projects</h2>
+
+        <article class="resume-entry">
+          <div class="resume-entry__row">
+            <h3>JavaScript Quiz App</h3>
+
+            <p class="resume-entry__date">
+              <time datetime="2026-07">July 2026</time>
+            </p>
+          </div>
+
+          <div class="resume-entry__row">
+            <p><strong>Fullstack Foundations Team</strong></p>
+            <p>Rexburg, Idaho</p>
+          </div>
+
+          <ul class="resume-list">
+            <li>
+              Built a role-based quiz application allowing guests to take public
+              quizzes and registered users to create, edit, delete, and track
+              quizzes.
+            </li>
+          </ul>
+        </article>
+
+        <article class="resume-entry">
+          <div class="resume-entry__row">
+            <h3>ReplyBot Customer Service</h3>
+
+            <p class="resume-entry__date">
+              <time datetime="2026-04">April 2026</time>
+            </p>
+          </div>
+
+          <div class="resume-entry__row">
+            <p><strong>Personal Project</strong></p>
+            <p>Rexburg, Idaho</p>
+          </div>
+
+          <ul class="resume-list">
+            <li>
+              Built a full-stack customer-service application using Node.js,
+              Express, EJS, and PostgreSQL with role-based authentication and
+              secure sessions.
+            </li>
+          </ul>
+        </article>
+      </section>
+      </article>
+    </main>
+    <footer class="site-footer"><div class="site-footer__inner"><p class="site-footer__title">Enoch Olayemi</p><ul class="site-footer__links"><li><a href="index.html">Home</a></li><li><a href="index.html#projects">Projects</a></li><li><a href="contact.html">Contact</a></li><li><a href="https://www.linkedin.com/in/enoch-olayemi/">LinkedIn</a></li></ul><p class="site-footer__copyright">© 2026 Enoch Olayemi. Designed and built with intention.</p></div></footer>
+  </body>
+</html>

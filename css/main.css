@@ -1,0 +1,20 @@
+@layer reset, tokens, base, layout, components, utilities;
+
+@import "./base/reset.css" layer(reset);
+
+@import "./tokens/colors.css" layer(tokens);
+@import "./tokens/variables.css" layer(tokens);
+
+@import "./base/elements.css" layer(base);
+
+@import "./layout/home.css" layer(layout);
+@import "./layout/portfolio.css" layer(layout);
+@import "./layout/resume.css" layer(layout);
+
+@import "./components/nav.css" layer(components);
+@import "./components/forms.css" layer(components);
+@import "./components/buttons.css" layer(components);
+@import url('components/theme-toggle.css') layer(components);
+
+@import "./utilities/utilities.css" layer(utilities);
+

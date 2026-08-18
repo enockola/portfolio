@@ -1,0 +1,75 @@
+form {
+  display: grid;
+  gap: var(--spacing-md);
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 40rem;
+  padding-block-end: var(--spacing-xl);
+}
+
+.form-field {
+  display: grid;
+  gap: var(--spacing-xs);
+}
+
+label {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+/*
+ * Apply the full input styles to text controls,
+ * but not checkboxes, radios, or range inputs.
+ */
+:is(
+  input:not([type="checkbox"]):not([type="radio"]):not([type="range"]),
+  textarea,
+  select
+) {
+  width: 100%;
+  padding: var(--spacing-sm);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-md);
+  transition:
+    border-color var(--transition-base),
+    box-shadow var(--transition-base),
+    background-color var(--transition-base);
+}
+
+:is(
+  input:not([type="checkbox"]):not([type="radio"]):not([type="range"]),
+  textarea,
+  select
+):focus-visible {
+  border-color: var(--color-accent);
+  outline: var(--outline-width) solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+textarea {
+  field-sizing: content;
+  min-height: 8rem;
+  max-height: 24rem;
+  overflow-y: auto;
+  resize: vertical;
+}
+
+.checkbox-field {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  width: fit-content;
+}
+
+.checkbox-field input {
+  flex: none;
+  width: 1.1rem;
+  height: 1.1rem;
+  margin: 0;
+}

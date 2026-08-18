@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Enoch Olayemi, a computer science student focused on AI engineering and full-stack web development." />
+  <title>Enoch Olayemi | Full-Stack Developer</title>
+  <script src="js/theme-preference.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="dist/styles.css" />
+</head>
+<body class="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Main navigation">
+      <a class="site-logo" href="index.html" aria-current="page">EO<span>.</span></a>
+      <ul class="site-nav__list">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="resume.html">Résumé</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <details class="theme-menu">
+        <summary class="theme-control"><span class="visually-hidden">Color scheme</span></summary>
+        <div class="theme-extra" role="group" aria-label="Choose color scheme">
+          <label class="theme-control theme-pick" data-theme-pick="light"><input name="theme-preference" type="radio" value="light" /><span aria-hidden="true">☀️</span><span class="visually-hidden">Light</span></label>
+          <label class="theme-control theme-pick" data-theme-pick="system"><input name="theme-preference" type="radio" value="system" checked /><span aria-hidden="true">⚙️</span><span class="visually-hidden">System default</span></label>
+          <label class="theme-control theme-pick" data-theme-pick="dark"><input name="theme-preference" type="radio" value="dark" /><span aria-hidden="true">🌖</span><span class="visually-hidden">Dark</span></label>
+        </div>
+      </details>
+    </nav>
+  </header>
+
+  <main id="main" class="page">
+    <section class="home-hero" aria-labelledby="hero-title">
+      <div>
+        <p class="eyebrow">Computer science · AI engineering · Full-stack web</p>
+        <!-- <h1 id="hero-title">Thoughtful code. <span>Intelligent</span> experiences.</h1> -->
+        <h1 id="hero-title">Learning. <span>Solving Problems</span>. Leading.</h1>
+        <p class="home-hero__intro">I’m Enoch Olayemi, a computer science student interested in AI engineering and full-stack development. I enjoy building useful web experiences and exploring how intelligent systems can solve meaningful problems.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#projects">Explore my work <span aria-hidden="true">→</span></a>
+          <a class="btn btn--secondary" href="contact.html">Let’s connect</a>
+        </div>
+      </div>
+      <figure class="home-hero__portrait">
+        <img src="images/enoch.jpg" alt="Enoch Olayemi smiling outdoors" width="720" height="900" />
+      </figure>
+    </section>
+
+    <section class="portfolio-section" id="projects" aria-labelledby="work-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">Selected work</p><h2 id="work-title">Projects built to solve real problems.</h2></div>
+        <p>Four projects that demonstrate my work across full-stack development, user-focused applications, support workflows, and relational data.</p>
+      </div>
+      <div class="featured-grid">
+        <a class="featured-card" href="https://github.com/enockola/tapitude" target="_blank" rel="noopener noreferrer">
+          <img class="featured-card__image" src="images/projects/tapitude.png" alt="Tapitude creator dashboard showing published and scheduled content" width="1917" height="967" loading="lazy" />
+          <span class="featured-card__number">01 · Creator platform</span>
+          <h3>Tapitude</h3><p>A creator-focused application for managing, customizing, and publishing digital content pages accessed through unique URLs or NFC chips.</p>
+          <ul class="project-tags" aria-label="Technologies"><li>TypeScript</li><li>Node.js</li><li>Full Stack</li></ul>
+        </a>
+        <a class="featured-card" href="https://github.com/enockola/js-quizlet" target="_blank" rel="noopener noreferrer">
+          <img class="featured-card__image" src="images/projects/js-quizlet.png" alt="JavaScript Quizlet interface displaying a Variables and Types quiz" width="1919" height="913" loading="lazy" />
+          <span class="featured-card__number">02 · Learning platform</span>
+          <h3>JavaScript Quizlet</h3><p>A full-stack quiz platform with authentication, quiz creation and management, search, scoring, and public or private quizzes.</p>
+          <ul class="project-tags" aria-label="Technologies"><li>JavaScript</li><li>Express</li><li>MongoDB</li></ul>
+        </a>
+        <a class="featured-card" href="https://github.com/enockola/replybot" target="_blank" rel="noopener noreferrer">
+          <img class="featured-card__image" src="images/projects/replybot.png" alt="ReplyBot dashboard displaying categorized canned responses" width="1919" height="911" loading="lazy" />
+          <span class="featured-card__number">03 · Support workflow</span>
+          <h3>ReplyBot</h3><p>A server-rendered application that helps support teams manage canned responses, tickets, suggestions, and multi-stage service workflows.</p>
+          <ul class="project-tags" aria-label="Technologies"><li>Node.js</li><li>PostgreSQL</li><li>EJS</li></ul>
+        </a>
+        <a class="featured-card" href="https://github.com/enockola/stride" target="_blank" rel="noopener noreferrer">
+          <img class="featured-card__image" src="images/projects/stride.png" alt="Stride relational database diagram for users, tricks, practice sessions, and skill levels" width="1203" height="764" loading="lazy" />
+          <span class="featured-card__number">04 · Data systems</span>
+          <h3>Stride</h3><p>A SQL database for tracking roller-skating tricks, progression, practice sessions, prerequisites, and skill levels.</p>
+          <ul class="project-tags" aria-label="Technologies"><li>Python</li><li>SQL</li><li>Data Modeling</li></ul>
+        </a>
+      </div>
+    </section>
+
+    <section class="portfolio-section" id="about" aria-labelledby="about-title">
+      <div class="about-panel">
+        <div><p class="eyebrow">Where I’m headed</p><h2 id="about-title">Building at the intersection of AI and the web.</h2></div>
+        <div class="about-panel__copy">
+          <p>My major in Computer Science gives me a broad foundation in software and problem solving. I’m complementing it with a minor in AI Engineering and a certificate in Full-Stack Web Design and Development.</p>
+          <p>I’m especially interested in connecting intelligent systems to useful products—combining AI concepts, backend logic, reliable data, and accessible interfaces into experiences people can actually use.</p>
+          <ul class="skills-list" aria-label="Interests and skills"><li>AI Engineering</li><li>Full-Stack Development</li><li>JavaScript</li><li>Node.js</li><li>Express</li><li>SQL</li><li>Accessible CSS</li></ul>
+          <div class="section-actions"><a class="btn btn--secondary" href="resume.html">View my résumé</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio-section" aria-labelledby="contact-title">
+      <div class="contact-panel">
+        <div><p class="eyebrow">Let’s build something useful</p><h2 id="contact-title">Have a project or opportunity in mind?</h2></div>
+        <div><p>I’m always glad to talk about web development, software projects, and opportunities to learn with a thoughtful team.</p><div class="section-actions"><a class="btn" href="contact.html">Start a conversation <span aria-hidden="true">→</span></a></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="site-footer__inner"><p class="site-footer__title">Enoch Olayemi</p><ul class="site-footer__links"><li><a href="#projects">Projects</a></li><li><a href="resume.html">Résumé</a></li><li><a href="https://github.com/enockola">GitHub</a></li><li><a href="https://www.linkedin.com/in/enoch-olayemi/">LinkedIn</a></li></ul><p class="site-footer__copyright">© 2026 Enoch Olayemi. Designed and built with intention.</p></div></footer>
+</body>
+</html>
